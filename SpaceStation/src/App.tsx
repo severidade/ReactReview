@@ -20,44 +20,9 @@ function App() {
     fetchData();
   }, []);
 
-  // if (loading) {
-  //   return <h1>Loading...</h1>;
-  // }
-
   return (
     <>
       <h1>International Space Station Location Tracker</h1>
-
-      {/* {coordinates && (
-        <>
-          <h2>{`Latitude: ${coordinates.latitude}`}</h2>
-          <h2>{`Longitude: ${coordinates.longitude}`}</h2>
-        </>
-      )} */}
-
-      {/* {coordinates ? (
-          <>
-            <h2>{`Latitude: ${coordinates.latitude}`}</h2>
-            <h2>{`Longitude: ${coordinates.longitude}`}</h2>
-          </>
-        ) : (
-          <h2>Carregando...</h2>
-        )} */}
-
-      {/* <h2>
-        Latitude:
-        {' '}
-        {coordinates
-          ? ` ${coordinates.latitude}`
-          : ' Carregando...'}
-      </h2>
-      <h2>
-        Longitude
-        {' '}
-        {coordinates
-          ? ` ${coordinates.longitude}`
-          : ' Carregando...'}
-      </h2> */}
       <h2>
         Longitude:
         {' '}
