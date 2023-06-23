@@ -18,6 +18,14 @@ function App() {
       setLoading(false);
     }
     fetchData();
+
+    const intervalId = setInterval(() => {
+      fetchData();
+    }, 1000);
+
+    return () => { // Essa é a função cleanup
+      clearInterval(intervalId);
+    };
   }, []);
 
   return (
